@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@theme {
+    --color-neki: #ff0;
+}
+
+/* FormBuilder Component Styles */
+
+/* Layout Classes */
+.form-builder-container {
+    @apply flex h-screen bg-gray-100;
+}
+
+.form-container {
+    @apply mx-auto max-w-md overflow-hidden rounded-2xl bg-white shadow-lg;
+}
+
+.form-header {
+    @apply border-b bg-white p-6;
+}
+
+.form-content {
+    @apply min-h-96 p-6;
+}
+
+.form-footer {
+    @apply border-t bg-white p-6;
+}
+
+/* Progress Bar Classes */
+.progress-bar {
+    @apply h-2 flex-1 rounded-full transition-all duration-300;
+}
+
+.progress-segment {
+    @apply h-2 flex-1 rounded-full;
+}
+
+.progress-segment-active {
+    @apply bg-indigo-500;
+}
+
+.progress-segment-inactive {
+    @apply bg-gray-200;
+}
+
+/* Field Classes */
+.field-container {
+    @apply space-y-4;
+}
+
+.field-title {
+    @apply text-2xl font-bold text-gray-800;
+}
+
+.field-input-large {
+    @apply w-32 border-b-2 border-gray-300 bg-transparent text-6xl font-bold outline-none focus:border-indigo-500 transition-colors;
+}
+
+.field-input-text {
+    @apply w-full rounded-lg border border-gray-300 p-3 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-colors outline-none;
+}
+
+.field-unit-text {
+    @apply text-2xl text-gray-600;
+}
+
+/* Button Classes */
+.btn-primary {
+    @apply w-full rounded-xl py-3 font-medium text-white transition-colors duration-200;
+}
+
+.btn-next {
+    @apply bg-indigo-500 hover:bg-indigo-600;
+}
+
+.btn-submit {
+    @apply bg-green-500 hover:bg-green-600;
+}
+
+.btn-unit {
+    @apply rounded-lg px-6 py-2 font-medium transition-colors duration-200;
+}
+
+.btn-unit-active {
+    @apply bg-indigo-500 text-white;
+}
+
+.btn-unit-inactive {
+    @apply bg-gray-200 hover:bg-gray-300;
+}
+
+.btn-option {
+    @apply flex w-full items-center gap-3 rounded-lg border-2 p-4 text-left transition-all duration-200 hover:shadow-md;
+}
+
+.btn-option-selected {
+    @apply border-indigo-500 bg-indigo-50 shadow-sm;
+}
+
+.btn-option-unselected {
+    @apply border-gray-200 hover:border-gray-300;
+}
+
+.btn-checkbox {
+    @apply flex w-full items-center justify-between rounded-lg border-2 p-4 text-left transition-all duration-200;
+}
+
+.btn-nav-arrow {
+    @apply rounded-full p-2 hover:bg-gray-100;
+}
+
+/* Checkbox Classes */
+.checkbox-container {
+    @apply flex h-6 w-6 items-center justify-center rounded border-2 transition-colors;
+}
+
+.checkbox-checked {
+    @apply border-indigo-500 bg-indigo-500;
+}
+
+.checkbox-unchecked {
+    @apply border-gray-300;
+}
+
+.checkbox-icon {
+    @apply h-4 w-4 text-white;
+}
+
+/* Card Classes */
+.card-insight {
+    @apply rounded-lg border border-green-200 bg-green-50 p-4 animate-fade-in;
+}
+
+.card-insight-icon {
+    @apply flex h-8 w-8 items-center justify-center rounded-full bg-green-500 font-bold text-white;
+}
+
+/* Text Classes */
+.text-option-emoji {
+    @apply text-2xl;
+}
+
+.text-option-label {
+    @apply font-medium;
+}
+
+.text-form-header {
+    @apply font-bold text-gray-800 tracking-wider;
+}
+
+.text-insight {
+    @apply text-gray-700;
+}
+
+.text-insight-description {
+    @apply mt-2 text-gray-600;
+}
+
+/* Flex Layout Classes */
+.flex-gap-2 {
+    @apply flex gap-2;
+}
+
+.flex-center {
+    @apply flex items-center gap-2;
+}
+
+.flex-gap-1 {
+    @apply flex gap-1;
+}
+
+.flex-between {
+    @apply mb-4 flex items-center justify-between;
+}
+
+/* Animation Classes */
+.animate-fade-in {
+    @apply animate-fadeIn;
+}
+
+.animate-slide-in {
+    @apply animate-slideIn;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
